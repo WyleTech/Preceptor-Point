@@ -7,13 +7,18 @@ export default class Student extends React.Component {
     first_name: "",
     last_name: "",
     email: "",
+    phone_number: "",
     street_address: "",
     street_address2: "",
     city: "",
     zip: "",
-    choosestate: "",
-    number_of_guests: "",
-    description_of_request: ""
+    state: "",
+    zip: "",
+    description_of_request: "",
+    willing_to_travel: "",
+    hours_needed: "",
+    resume: "",
+    how_did_you_hear_about_us: ""
   };
 
   handleAlert = () => {
@@ -35,17 +40,23 @@ export default class Student extends React.Component {
     console.log(event.target.elements[7].value);
     console.log(event.target.elements[8].value);
     console.log(event.target.elements[9].value);
+    console.log(event.target.elements[10].value);
+    console.log(event.target.elements[11].value);
+    console.log(event.target.elements[12].value);
     axios.post(`http://localhost:8080/api/student`, {
       first_name: event.target.elements[0].value,
       last_name: event.target.elements[1].value,
       email: event.target.elements[2].value,
-      street_address: event.target.elements[3].value,
-      street_address2: event.target.elements[4].value,
-      city: event.target.elements[5].value,
-      state: event.target.elements[6].value,
-      zip: event.target.elements[7].value,
-      number_of_guests: event.target.elements[8].value,
-      description_of_request: event.target.elements[9].value
+      phone_number: event.target.elements[3].value,
+      street_address: event.target.elements[4].value,
+      street_address2: event.target.elements[5].value,
+      city: event.target.elements[6].value,
+      state: event.target.elements[7].value,
+      zip: event.target.elements[8].value,
+      willing_to_travel: event.target.elements[9].value,
+      hours_needed: event.target.elements[10].value,
+      resume: event.target.elements[11].value,
+      how_did_you_hear_about_us: event.target.elements[12].value
     });
   };
   render() {
@@ -53,58 +64,58 @@ export default class Student extends React.Component {
       <div>
         <header className="App-header">
           <form onSubmit={this.handleSubmit}>
-
-         
-            <p class="h1 text-secondary display-2 font-weight-bold">Student Inquiry Form</p>
+            <p class="h1 text-secondary display-2 font-weight-bold">
+              Student Inquiry Form
+            </p>
 
             {/* First Name Form - IN LINE with Last name */}
             <div className="form-row text-white-50">
-            <div class="col">
-              <label htmlFor="exampleInputFirstName">First Name</label>
-              <input
-                type="name"
-                className="form-control"
-                id="exampleInputFirstName"
-                placeholder="First Name"
-                onChange={this.handleChange}
-              />
-            </div>
-            
-            {/* Last Name Form IN LINE with First Name */}
-            <div class="col">
-              <label htmlFor="exampleInputLastName">Last Name</label>
-              <input
-                type="name"
-                className="form-control"
-                id="exampleInputLastName"
-                placeholder="Last Name"
-              />
-            </div>
+              <div class="col">
+                <label htmlFor="exampleInputFirstName">First Name</label>
+                <input
+                  type="name"
+                  className="form-control"
+                  id="exampleInputFirstName"
+                  placeholder="First Name"
+                  onChange={this.handleChange}
+                />
+              </div>
+
+              {/* Last Name Form IN LINE with First Name */}
+              <div class="col">
+                <label htmlFor="exampleInputLastName">Last Name</label>
+                <input
+                  type="name"
+                  className="form-control"
+                  id="exampleInputLastName"
+                  placeholder="Last Name"
+                />
+              </div>
             </div>
 
             {/* Email Form IN LINE with Phone Form */}
             <div className="form-row text-white-50">
-            <div class="col">
-              <label htmlFor="exampleInputEmail1">Email</label>
-              <input
-                type="email"
-                className="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="You@example.com"
-              />
-            </div>
-            <div class="col">
-            {/* Phone Number Form  IN LINE with Email Form*/}
-              <label htmlFor="phoneform">Phone Number</label>
-              <input
-                type="phone"
-                className="form-control"
-                id="phoneform"
-                aria-describedby="phone"
-                placeholder="(480) 123-4567"
-              />
-            </div>
+              <div class="col">
+                <label htmlFor="exampleInputEmail1">Email</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="You@example.com"
+                />
+              </div>
+              <div class="col">
+                {/* Phone Number Form  IN LINE with Email Form*/}
+                <label htmlFor="exampleInputPhoneNumber">Phone Number</label>
+                <input
+                  type="phone"
+                  className="form-control"
+                  id="exampleInputPhoneNumber"
+                  aria-describedby="phone"
+                  placeholder="(480) 123-4567"
+                />
+              </div>
             </div>
 
             {/* Address Form */}
@@ -211,11 +222,11 @@ export default class Student extends React.Component {
                 />
               </div>
             </div>
-            
-                  {/* Specialty Needed Form */}
-               <div className="form-row col-md-13 text-white-50">
-               <div class="col">
-                     <label htmlFor="inputState">Specialty Needed?</label>
+
+            {/* Specialty Needed Form */}
+            <div className="form-row col-md-13 text-white-50">
+              <div class="col">
+                <label htmlFor="inputSpecialtyNeeded">Specialty Needed?</label>
                 <select id="inputState" className="form-control">
                   <option defaultValue>Choose</option>
                   <option value="">Pediatrics</option>
@@ -224,51 +235,55 @@ export default class Student extends React.Component {
                   <option value="">Family Medicine</option>
                   <option value="">Psych</option>
                   <option value="">Other (type description below)</option>
-                  </select>
-                  </div>
+                </select>
+              </div>
 
-                 {/* Willing to travel Selection Form */}
-                 <div class="form-group col-md-3 text-white-50">
-                <label htmlFor="inputState">Travel?</label>
-                <select id="inputState" className="form-control">
+              {/* Willing to travel Selection Form */}
+              <div class="form-group col-md-3 text-white-50">
+                <label htmlFor="inputWillingToTravel">Travel?</label>
+                <select id="inputWillingToTravel" className="form-control">
                   <option defaultValue>Choose</option>
                   <option value="">YES</option>
                   <option value="">NO</option>
-                  </select>
-                  </div>
-                 
-                   {/* Number of Hours Needed? */}
-                   <div class="form-group col-md-3 text-white-50">
-              <label htmlFor="hoursneeded">Hours?</label>
-              <input
-                type="hours"
-                className="form-control"
-                id="hoursneeded"
-                placeholder="hours needed?"
-              />
-            </div>
-            </div>
-       
-            {/* Additional Comments Form */}
-            <div className="form-row col-md-20 text-white-50">
-            <div class="col">
-              <label htmlFor="additionalcomments">
-                Additional Comments
-              </label>
-              <textarea
-                className="form-control"
-                id="additionalcomments"
-                rows="3"
-                placeholder="if other chosen above, place specialty here"
-              ></textarea>
+                </select>
+              </div>
+
+              {/* Number of Hours Needed? */}
+              <div class="form-group col-md-3 text-white-50">
+                <label htmlFor="hoursneeded">Hours?</label>
+                <input
+                  type="hours"
+                  className="form-control"
+                  id="InputHoursNeeded"
+                  placeholder="hours needed?"
+                />
+              </div>
             </div>
 
-            <div class="col-md-4 text-white-25">
-    <label for="resume">Attach Resume</label>
-    <input type="file" class="form-control-file form-control-sm" id="resume"/>
-  </div>
-  </div>
-            
+            {/* Additional Comments Form */}
+            <div className="form-row col-md-20 text-white-50">
+              <div class="col">
+                <label htmlFor="HowDidYouHearAboutUs">
+                  Additional Comments
+                </label>
+                <textarea
+                  className="form-control"
+                  id="InputHowDidYouHearAboutUs"
+                  rows="3"
+                  placeholder="if other chosen above, place specialty here"
+                ></textarea>
+              </div>
+
+              <div class="col-md-4 text-white-25">
+                <label for="resume">Attach Resume</label>
+                <input
+                  type="file"
+                  class="form-control-file form-control-sm"
+                  id="resume"
+                />
+              </div>
+            </div>
+
             {/* SUBMIT BUTTON */}
             <div className="text-center">
               <button

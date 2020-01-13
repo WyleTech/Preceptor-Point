@@ -13,7 +13,7 @@ import java.util.Date;
 @SuppressWarnings("serial")
 @Entity
 //This annotation specifies the name of the table the database will be using for mapping
-@Table(name = "contact_us")
+@Table(name = "contact_student")
 //This annotation works in conjunction with the enable JPA auditing annotation in the BookAppApplication class to allow listeners to determine when a new entity
 //so the createdAt and updatedAt fields are filled in with a date and timestamp from the server.
 @EntityListeners(AuditingEntityListener.class)
@@ -29,46 +29,46 @@ public class StudentForm implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    @NotBlank
+    //@NotBlank
     private String firstName;
     
-    @NotBlank
+    //@NotBlank
     private String lastName;
     
-    @NotBlank
+    //@NotBlank
     private String email;
     
-    @NotNull
+    //@NotNull
     private String phoneNumber;
     
-    @NotBlank
+    //@NotBlank
     private String streetAddress;
     
-    @NotBlank
+    //@NotBlank
     private String streetAddress2;
     
-    @NotBlank
+    //@NotBlank
     private String city;
     
-    @NotBlank
+    //@NotBlank
     private String state;
     
-    @NotNull
+    //@NotNull
     private Long zip;
     
-    @NotBlank
+    // @NotBlank
     private String willingToTravel;
     
-    @NotBlank
+    // @NotBlank
     private String specialtyNeeded;
     
-    @NotNull
+    //@NotNull
     private Long hoursNeeded;
     
-    @NotBlank
+   // @NotBlank
     private String resume; //RESUME UPLOAD - need to check file upload annotation!!! 
     
-    @NotBlank
+    //@NotBlank
     @Lob
     private String howDidYouHearAboutUs;
     // This annotation allows the programmer to define the properties of the column
