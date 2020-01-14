@@ -18,12 +18,12 @@ import java.util.Date;
 @Entity
 //This annotation specifies the name of the table the database will be using for mapping
 @Table(name = "contact_us")
-////This annotation works in conjunction with the enable JPA auditing annotation in the BookAppApplication class to allow listeners to determine when a new entity
-////so the createdAt and updatedAt fields are filled in with a date and timestamp from the server.
-//@EntityListeners(AuditingEntityListener.class)
-////This annotation is used to ignore the serialization or deserialization of items as JSON objects. In this case these two values as we do not want them from the 
-////client because we want the time created and updated from the server. 
-//@JsonIgnoreProperties(value = { "createdAt", "updatedAt" }, allowGetters = true)
+//This annotation works in conjunction with the enable JPA auditing annotation in the BookAppApplication class to allow listeners to determine when a new entity
+//so the createdAt and updatedAt fields are filled in with a date and timestamp from the server.
+@EntityListeners(AuditingEntityListener.class)
+//This annotation is used to ignore the serialization or deserialization of items as JSON objects. In this case these two values as we do not want them from the 
+//client because we want the time created and updated from the server. 
+@JsonIgnoreProperties(value = { "createdAt", "updatedAt" }, allowGetters = true)
 
 public class StudentForm implements Serializable{
 	 // This annotation defines the primary key

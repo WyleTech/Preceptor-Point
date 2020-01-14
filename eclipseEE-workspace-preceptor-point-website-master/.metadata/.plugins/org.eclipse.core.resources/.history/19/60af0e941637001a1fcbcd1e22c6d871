@@ -18,12 +18,12 @@ import java.util.Date;
 @Entity
 //This annotation specifies the name of the table the database will be using for mapping
 @Table(name = "contact_us")
-////This annotation works in conjunction with the enable JPA auditing annotation in the BookAppApplication class to allow listeners to determine when a new entity
-////so the createdAt and updatedAt fields are filled in with a date and timestamp from the server.
-//@EntityListeners(AuditingEntityListener.class)
-////This annotation is used to ignore the serialization or deserialization of items as JSON objects. In this case these two values as we do not want them from the 
-////client because we want the time created and updated from the server. 
-//@JsonIgnoreProperties(value = { "createdAt", "updatedAt" }, allowGetters = true)
+//This annotation works in conjunction with the enable JPA auditing annotation in the BookAppApplication class to allow listeners to determine when a new entity
+//so the createdAt and updatedAt fields are filled in with a date and timestamp from the server.
+@EntityListeners(AuditingEntityListener.class)
+//This annotation is used to ignore the serialization or deserialization of items as JSON objects. In this case these two values as we do not want them from the 
+//client because we want the time created and updated from the server. 
+@JsonIgnoreProperties(value = { "createdAt", "updatedAt" }, allowGetters = true)
 
 public class StudentForm implements Serializable{
 	 // This annotation defines the primary key
@@ -79,21 +79,21 @@ public class StudentForm implements Serializable{
     // in this case the field man not be null, and is not updatable.
     // This annotation works with Java classes date and calendar to create a
     // timestamp
-//    @Temporal(TemporalType.TIMESTAMP)
-//	// This annotation allows the programmer to define the properties of the column
-//    // in this case the field man not be null, and is not updatable.
-//    @Column(name="createdAt", updatable = false)
-//    // This annotation sets the date and time the object was created to a field in
-//    // the datebase.
-//    @CreatedDate
-//    private Date createdAt;
-//    // This column cannot be null
-//  
-//    @Temporal(TemporalType.TIMESTAMP)
-//    // This annotation creates a field for the last update to the row
-//    @Column(name="updatedAt")
-//    @LastModifiedDate
-//    private Date updatedAt;
+    @Temporal(TemporalType.TIMESTAMP)
+	// This annotation allows the programmer to define the properties of the column
+    // in this case the field man not be null, and is not updatable.
+    @Column(name="createdAt", updatable = false)
+    // This annotation sets the date and time the object was created to a field in
+    // the datebase.
+    @CreatedDate
+    private Date createdAt;
+    // This column cannot be null
+  
+    @Temporal(TemporalType.TIMESTAMP)
+    // This annotation creates a field for the last update to the row
+    @Column(name="updatedAt")
+    @LastModifiedDate
+    private Date updatedAt;
 	public Long getId() {
 		return id;
 	}
@@ -184,18 +184,18 @@ public class StudentForm implements Serializable{
 	public void setHowDidYouHearAboutUs(String howDidYouHearAboutUs) {
 		this.howDidYouHearAboutUs = howDidYouHearAboutUs;
 	}
-//	public Date getCreatedAt() {
-//		return createdAt;
-//	}
-//	public void setCreatedAt(Date createdAt) {
-//		this.createdAt = createdAt;
-//	}
-//	public Date getUpdatedAt() {
-//		return updatedAt;
-//	}
-//	public void setUpdatedAt(Date updatedAt) {
-//		this.updatedAt = updatedAt;
-//	}
+	public Date getCreatedAt() {
+		return createdAt;
+	}
+	public void setCreatedAt(Date createdAt) {
+		this.createdAt = createdAt;
+	}
+	public Date getUpdatedAt() {
+		return updatedAt;
+	}
+	public void setUpdatedAt(Date updatedAt) {
+		this.updatedAt = updatedAt;
+	}
     
     
 
