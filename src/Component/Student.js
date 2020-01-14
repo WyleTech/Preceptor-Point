@@ -227,7 +227,7 @@ export default class Student extends React.Component {
             <div className="form-row col-md-13 text-white-50">
               <div class="col">
                 <label htmlFor="inputSpecialtyNeeded">Specialty Needed?</label>
-                <select id="inputState" className="form-control">
+                <select id="inputSpecialtyNeeded" className="form-control">
                   <option defaultValue>Choose</option>
                   <option value="">Pediatrics</option>
                   <option value="">Primary Care</option>

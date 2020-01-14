@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./Component/Navbar"
-import About from "./Component/About"
-import Home from "./Component/Home"
+import Navbar from "./Component/Navbar";
+import About from "./Component/About";
+import Home from "./Component/Home";
 import Student from "./Component/Student";
 import NoMatch from "./Component/NoMatch";
-import Footer from "./Component/Footer"
-import Preceptor from "./Component/Preceptor"
-import './App.css';
-
+import Footer from "./Component/Footer";
+import Preceptor from "./Component/Preceptor";
+import "./App.css";
+import ProtectedRoute from "./Component/ProtectedRoute";
 
 class App extends React.Component {
   render() {
@@ -22,6 +22,7 @@ class App extends React.Component {
             <Route exact path="/about" component={About} />
             <Route exact path="/student" component={Student} />
             {/* <Route exact path="/login" component={ValidatedLoginForm} /> */}
+            <ProtectedRoute exact path="/admin" component={TabComponent} />
             <Route exact pathe="/404" component={NoMatch} />
           </Switch>
           <Footer></Footer>
