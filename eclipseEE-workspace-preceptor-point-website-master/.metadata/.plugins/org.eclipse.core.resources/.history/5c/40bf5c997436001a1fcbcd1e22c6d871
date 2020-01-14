@@ -81,6 +81,7 @@ public class StudentForm implements Serializable {
    @Temporal(TemporalType.TIMESTAMP)
     // This annotation sets the date and time the object was created to a field in
     // the datebase.
+    @NotNull
     @CreatedDate
     private Date createdAt;
    // This column cannot be null
@@ -89,6 +90,7 @@ public class StudentForm implements Serializable {
     
     @Temporal(TemporalType.TIMESTAMP)
     // This annotation creates a field for the last update to the row
+    @NotNull
     @LastModifiedDate
     private Date updatedAt;
     

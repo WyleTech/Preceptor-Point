@@ -74,23 +74,25 @@ public class StudentForm implements Serializable {
     // This annotation allows the programmer to define the properties of the column
     // in this case the field man not be null, and is not updatable.
     
-   @Column(nullable = false, updatable = false)
-   // This annotation works with Java classes date and calendar to create a
-  // timestamp
-  
-   @Temporal(TemporalType.TIMESTAMP)
-    // This annotation sets the date and time the object was created to a field in
-    // the datebase.
-    @CreatedDate
-    private Date createdAt;
-   // This column cannot be null
-    
-    @Column(nullable = false)
-    
-    @Temporal(TemporalType.TIMESTAMP)
-    // This annotation creates a field for the last update to the row
-    @LastModifiedDate
-    private Date updatedAt;
+//    @Column(nullable = false, updatable = false)
+//    // This annotation works with Java classes date and calendar to create a
+//    // timestamp
+//    
+//    @Temporal(TemporalType.TIMESTAMP)
+//    // This annotation sets the date and time the object was created to a field in
+//    // the datebase.
+//    @NotNull
+//    @CreatedDate
+//    private Date createdAt;
+//    // This column cannot be null
+//    
+//    @Column(nullable = false)
+//    
+//    @Temporal(TemporalType.TIMESTAMP)
+//    // This annotation creates a field for the last update to the row
+//    @NotNull
+//    @LastModifiedDate
+//    private Date updatedAt;
     
     //GETTERS AND SETTERS FOR STUDENT INQUIRY FORM DATA
 
@@ -213,25 +215,25 @@ public class StudentForm implements Serializable {
 	public void setHowDidYouHearAboutUs(String howDidYouHearAboutUs) {
 		this.howDidYouHearAboutUs = howDidYouHearAboutUs;
 	}
-
-	public Date getCreatedAt() {
-		return createdAt;
-	}
-
-	public void setCreatedAt(Date createdAt) {
-		this.createdAt = createdAt;
-	}
-
-	public Date getUpdatedAt() {
-		return updatedAt;
-	}
-
-	public void setUpdatedAt(Date updatedAt) {
-		this.updatedAt = updatedAt;
-	}
-
- 
-    
+//
+//	public Date getCreatedAt() {
+//		return createdAt;
+//	}
+//
+//	public void setCreatedAt(Date createdAt) {
+//		this.createdAt = createdAt;
+//	}
+//
+//	public Date getUpdatedAt() {
+//		return updatedAt;
+//	}
+//
+//	public void setUpdatedAt(Date updatedAt) {
+//		this.updatedAt = updatedAt;
+//	}
+//
+// 
+//    
 }
 
 

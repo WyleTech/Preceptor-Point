@@ -1,0 +1,4 @@
+spring.datasource.url = jdbc:mysql://bill2019gcu.cmcdvrxkhzt6.us-east-2.rds.amazonaws.com/preceptor
+spring.datasource.username = admin
+spring.datasource.password = wyleadmin
+spring.jpa.hibernate.ddl-auto = update
