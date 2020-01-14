@@ -23,7 +23,7 @@ export default class Student extends React.Component {
 
   handleAlert = () => {
     alert(
-      "You're informtaion has been submitted. Please allow up to 24 hours for response"
+      "Your informtaion has been submitted. Please allow up to 24 hours for response"
     );
   };
 

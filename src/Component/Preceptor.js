@@ -4,12 +4,11 @@ import React from "react";
 const Preceptor = () => (
   <React.Fragment>
     <header className="page-header">
-      <h1 className="text-white col-lg-9 my-5">
+      <h1 className="text-white text-center col-lg-9 my-5">
         <i class="fas fa-file-medical"></i> Want to be a Preceptor?
       </h1>
     </header>
     <div className="container">
-      <div className="row p-5">
         <div className="col-lg-9 text-left text-white-50">
           <p>
             As NP student follow their path toward graduation, they need a
@@ -28,7 +27,7 @@ const Preceptor = () => (
           </p>
         </div>
       </div>
-    </div>
+  
   </React.Fragment>
 );
 

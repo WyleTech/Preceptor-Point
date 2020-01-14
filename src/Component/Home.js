@@ -4,7 +4,7 @@ import Table from "react-bootstrap/Table";
 const Home = () => (
   <React.Fragment>
     <header className="page-header">
-      <h1 className="text-white col-lg-9 my-5">
+      <h1 className="text-white text-center col-lg-9 my-5">
         <i class="fas fa-file-medical"></i> Preceptor Point
       </h1>
     </header>
