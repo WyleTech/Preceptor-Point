@@ -13,7 +13,7 @@ import java.util.Date;
 @SuppressWarnings("serial")
 @Entity
 //This annotation specifies the name of the table the database will be using for mapping
-@Table(name = "preceptor_contact_us")
+@Table(name = "contact_us")
 //This annotation works in conjunction with the enable JPA auditing annotation in the BookAppApplication class to allow listeners to determine when a new entity
 //so the createdAt and updatedAt fields are filled in with a date and timestamp from the server.
 @EntityListeners(AuditingEntityListener.class)
