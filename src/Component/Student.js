@@ -4,21 +4,20 @@ import "../App.css";
 
 export default class Student extends React.Component {
   state = {
-    first_name: "",
-    last_name: "",
+    firstName: "",
+    lastName: "",
     email: "",
-    phone_number: "",
-    street_address: "",
-    street_address2: "",
+    phoneNumber: "",
+    streetAddress: "",
+    streetAddress2: "",
     city: "",
-    zip: "",
     state: "",
     zip: "",
-    description_of_request: "",
-    willing_to_travel: "",
-    hours_needed: "",
-    resume: "",
-    how_did_you_hear_about_us: ""
+    willingToTravel: "",
+    specialtyNeeded: "",
+    hoursNeeded: "",
+    howDidYouHearAboutUs: "",
+    resume: ""
   };
 
   handleAlert = () => {
@@ -43,20 +42,22 @@ export default class Student extends React.Component {
     console.log(event.target.elements[10].value);
     console.log(event.target.elements[11].value);
     console.log(event.target.elements[12].value);
+    console.log(event.target.elements[13].value);
     axios.post(`http://localhost:8080/api/student`, {
-      first_name: event.target.elements[0].value,
-      last_name: event.target.elements[1].value,
+      firstName: event.target.elements[0].value,
+      lastName: event.target.elements[1].value,
       email: event.target.elements[2].value,
-      phone_number: event.target.elements[3].value,
-      street_address: event.target.elements[4].value,
-      street_address2: event.target.elements[5].value,
+      phoneNumber: event.target.elements[3].value,
+      streetAddress: event.target.elements[4].value,
+      streetAddress2: event.target.elements[5].value,
       city: event.target.elements[6].value,
       state: event.target.elements[7].value,
       zip: event.target.elements[8].value,
-      willing_to_travel: event.target.elements[9].value,
-      hours_needed: event.target.elements[10].value,
-      resume: event.target.elements[11].value,
-      how_did_you_hear_about_us: event.target.elements[12].value
+      willingToTravel: event.target.elements[9].value,
+      specialtyNeeded: event.target.elements[10].value,
+      hoursNeeded: event.target.elements[11].value,
+      howDidYouHearAboutUs: event.target.elements[12].value,
+      resume: event.target.elements[13].value
     });
   };
   render() {
@@ -120,7 +121,7 @@ export default class Student extends React.Component {
 
             {/* Address Form */}
             <div className="form-group text-white-50">
-              <label htmlFor="exampleInputstreet_address">Address</label>
+              <label htmlFor="exampleInputstreetAddress">Address</label>
               <input
                 type="address"
                 className="form-control"
@@ -130,11 +131,11 @@ export default class Student extends React.Component {
             </div>
             {/* Address 2 (optional) Form */}
             <div className="form-group text-white-50">
-              <label htmlFor="exampleInputstreet_address">
+              <label htmlFor="exampleInputstreetAddress2">
                 Address 2 (optional)
               </label>
               <input
-                type="address"
+                type="address2"
                 className="form-control"
                 id="InputAddress2"
                 placeholder="Apartment or suite"

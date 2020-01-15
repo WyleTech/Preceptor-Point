@@ -47,7 +47,7 @@ class PreceptorReviewer extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="bg-dark text-center text-white-50">Contacts</h1>
+        <h1 className="bg-dark text-center text-white-50">Preceptor</h1>
         <table className="table table-striped table-bordered table-dark">
           <thead>
             <tr>
