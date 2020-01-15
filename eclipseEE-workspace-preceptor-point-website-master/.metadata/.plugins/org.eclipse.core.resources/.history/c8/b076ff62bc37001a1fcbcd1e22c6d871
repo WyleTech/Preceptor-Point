@@ -1,0 +1,5 @@
+package com.SquirrelMaster.preceptor_point_website;
+
+public interface LoginRepository {
+
+}

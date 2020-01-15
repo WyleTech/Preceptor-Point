@@ -2,7 +2,7 @@ import React from "react";
 import Axios from "axios";
 import URL from "./URL";
 
-class StudentReviewer extends React.Component {
+class PreceptorReviewer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -107,4 +107,4 @@ class StudentReviewer extends React.Component {
     );
   }
 }
-export default StudentReviewer;
+export default PreceptorReviewer;

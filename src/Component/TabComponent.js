@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import Tabs from "./Tabs";
-import MenuAdmin from "./MenuAdmin";
-import FoodMap1Admin from "./FoodMap1Admin";
-import ContactUsReviewer from "./ContactUsReviewer";
 import Auth from "./Auth";
+import StudentReviewer from "./StudentReviewer";
+import PreceptorReviwer from "./PreceptorReviewer";
 
 class TabComponent extends Component {
   render() {
@@ -28,8 +27,11 @@ class TabComponent extends Component {
         </div>
         <div className="bg-dark text-white-50">
           <Tabs className="bg-dark text-white-50">
-            <div label="Map Admin">
-              <FoodMap1Admin></FoodMap1Admin>
+            <div label="Student Reviewer">
+              <StudentReviewer></StudentReviewer>
+            </div>
+            <div label="Preceptor Reviewer">
+              <PreceptorReviwer></PreceptorReviwer>
             </div>
           </Tabs>
         </div>

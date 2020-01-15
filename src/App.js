@@ -9,6 +9,8 @@ import Footer from "./Component/Footer";
 import Preceptor from "./Component/Preceptor";
 import "./App.css";
 import ProtectedRoute from "./Component/ProtectedRoute";
+import TabComponent from "./Component/TabComponent";
+import Login from "./Component/Login";
 
 class App extends React.Component {
   render() {
@@ -21,7 +23,7 @@ class App extends React.Component {
             <Route exact path="/preceptor" component={Preceptor} />
             <Route exact path="/about" component={About} />
             <Route exact path="/student" component={Student} />
-            {/* <Route exact path="/login" component={ValidatedLoginForm} /> */}
+            <Route exact path="/login" component={Login} />
             <ProtectedRoute exact path="/admin" component={TabComponent} />
             <Route exact pathe="/404" component={NoMatch} />
           </Switch>
