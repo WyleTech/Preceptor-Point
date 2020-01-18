@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+/*  CSS Edits from responsive Image Homepage  */
+.Home {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.Home-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px;
+  
+}
+
+/* If the screen size is 576px wide or more, set the font-size of .Title to 120px */
+@media screen and (min-width: 576px) {
+  .Title{
+    font-size: 120px;
+  }
+}
+
+/* If the screen size is 768px wide or more, set the font-size of .Title to 100px */
+@media screen and (min-width: 768px) {
+  .Title{
+    font-size: 100px;
+  }
+}
+
+/* If the screen size is 992px wide or more, set the font-size of .Title to 80px */
+@media screen and (min-width: 992px) {
+  .Title{
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 1200px wide or less, set the font-size of .Title to 40px */
+@media screen and (max-width: 1200px) {
+  .Title{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Table{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 650px ) {
+  .App {
+      background-position: center center;
+  }
+
+  .App-content {
+      align-items: flex-end;
+      justify-content: center;
+  }
+}
