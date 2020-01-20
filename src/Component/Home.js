@@ -1,8 +1,13 @@
 import React from "react";
-import Table from "react-bootstrap/Table";
+// import Table from "react-bootstrap/Table";
 import desktopImage from '../Images/brickwall.jpg';
 import { useState, useEffect } from 'react';
 import mobileImage from '../Images/brickwall.jpg';
+// import CardGroup from "react-bootstrap/CardGroup";
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button'
+import CardColumns from 'react-bootstrap/CardColumns';
+
 
 const Home = () => {
   const imageUrl = useWindowWidth() >= 650 ? desktopImage : mobileImage;
@@ -11,9 +16,57 @@ const Home = () => {
     <div className="Home" style={{ backgroundImage: `url(${imageUrl})` }}>
       <div className="Home-content">
         <h1 className="Title display-3 col-{breakpoint}-auto container text-white text-center font-weight-bold my-5">
-          <i class="fas fa-file-medical"></i> Preceptor Point
-          <div className="Student-Button">
-            <a href="/student">
+
+          <div className= "home-logo">
+          <div className= "container col-lg-8 ">
+          <img  src="../Images/PP_Logo_bizcard_blk.svg" class="img-fluid max-width: 100%" alt="Responsive image"></img>
+          </div>
+          </div>
+          </h1>
+
+              {/* Card List Practice */}
+        <div className="Cards-Home">
+        <div class="row justify-content-center">
+          <CardColumns >
+            <Card className="bg-transparent text-white ">
+              <Card.Img className="cards-image"  variant="round mx-auto d-block"  alt="Responsive image" src="../Images/pp1.jpg " />
+              <Card.Body>
+                <Card.Title className=" text-center">
+                  Find a Preceptor{" "}
+                </Card.Title>
+                <Card.Text>
+                  <a href="/student">
+                    <Button className="Button" size="lg" block variant="">
+                      Student Inquiry
+                    </Button>
+                  </a>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card className="bg-transparent text-white">
+              <Card.Img className="cards-image"  variant="round mx-auto d-block"  alt="Responsive image"  src="../Images/pp1.jpg" />
+              <Card.Body>
+                <Card.Title className=" text-center">
+                  Become a Preceptor {" "}
+                </Card.Title>
+                <Card.Text>
+                  <a href="/preceptor">
+                    <Button className="Button" size="lg" block variant="">
+                    Preceptor Inquiry
+                    </Button>
+                  </a>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </CardColumns>
+        </div>
+        </div>
+
+        <h1 className="call-today text-white display-5 responsive-font-sizes">Call Today! (480) 580-3457 </h1>
+        
+
+          {/* <div className="Student-Button"> */}
+            {/* <a href="/student">
               <button
                 type="button"
                 className="btn btn-link btn-info btn-lg  text-light ml-3 mr-3 mt-2 mb-5 "
@@ -22,12 +75,30 @@ const Home = () => {
                 {" "}
                 Students - Click to get started!
               </button>
-            </a>
-          </div>
-        </h1>
+            </a> */}
+          {/* </div> */}
+    
+    
 
-{/* Bootstrap Table */}
-        <div className="Table">
+        {/* CARD BUTTONS*** 
+       <div className="Student-inquiry">
+        <Card bg="dark" text="white" style={{ width: '18rem' }}>
+    <Card.Header>Need to earn NP Hours? </Card.Header>
+    <Card.Body>
+      <Card.Title>Students!</Card.Title>
+      <Card.Text>
+        If you're a student seeking NP hours, click here! 
+      </Card.Text>
+      <a href="/student">
+      <Button variant="primary">Learn More</Button>
+      </a>
+    </Card.Body>
+  </Card>
+  </div>
+  <br /> */}
+
+        {/* Bootstrap Table */}
+        {/* <div className="Table">
           <div className="container row p-5 col-{breakpoint}-auto">
             <div className="col-lg-9 text-left text-white-50">
               <Table striped bordered hover variant="dark">
@@ -79,7 +150,7 @@ const Home = () => {
               </Table>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

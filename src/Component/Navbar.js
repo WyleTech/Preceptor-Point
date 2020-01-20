@@ -6,8 +6,8 @@ class Navbar extends React.Component {
     return (
       <div className="navbar navbar-expand-lg navbar-dark bg-dark navbar-expand-lg border-bottom border-white">
         <nav className="container">
-          <Link className="my-0 mr-md-auto font-weight-normal" to="/">
-            {/* <img src="./images/rildil.svg" height="40" alt="rildil logo"></img> */}
+          <Link className="header-logo my-0 mr-md-auto font-weight-normal" to="/">
+            <img src="../Images/PP_Logo_bizcard_wht.svg" height="40" alt="rildil logo"></img>
           </Link>
           <button
             className="navbar-toggler"
