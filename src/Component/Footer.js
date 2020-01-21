@@ -28,18 +28,18 @@ class Footer extends React.Component {
           <div className="col-4 order-2">
             <Link className="navbar-brand" to="/">
               <img
-              // src="./Images/rildil.svg"
-              // alt="Ril Dil Barbecue logo"
-              // className="logo"
+               src="../Images/PP_Logo_bizcard_wht.svg"
+              alt="PP Logo Responsive image"
+               className="logo"
               ></img>
             </Link>
           </div>
-          <div className="col-4 order-3">
+          <div className="col-4 order-3 ">
             <strong>Contact Us</strong>
             <p className="mb-0 pb-0">
               Mesa, Arizona
               <br></br>
-              (480)-580-3457
+              (480) 580-3457
             </p>
             <span>
               <a
