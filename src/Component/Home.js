@@ -19,7 +19,7 @@ const Home = () => {
 
           <div className= "home-logo">
           <div className= "container col-lg-8 ">
-          <img  src="../Images/PP_Logo_bizcard_blk.svg" class="img-fluid max-width: 100%" alt="Responsive image"></img>
+          <img  src="../Images/PP_Logo_bizcard_blk.ai" class="img-fluid max-width: 100%" alt="Responsive image"></img>
           </div>
           </div>
           </h1>
