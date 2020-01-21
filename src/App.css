@@ -36,6 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
 /*  CSS Edits from responsive Image Homepage  */
 .Home {
   height: 100vh;
@@ -53,6 +54,8 @@
   padding: 40px;
   
 }
+
+/* RESIZING TITLE BASED ON SCREEN SIZE */
 
 /* If the screen size is 576px wide or more, set the font-size of .Title to 120px */
 @media screen and (min-width: 576px) {
@@ -83,7 +86,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .Table{
+  .Table, .call-today{
     font-size: 14px;
   }
 }
@@ -97,4 +100,38 @@
       align-items: flex-end;
       justify-content: center;
   }
+}
+
+
+/* Rounding Card-images */
+.cards-image {
+  border-radius: 50%;
+}
+
+/* Image Logo Home page center */
+.home-logo {
+  opacity: 0.5;
+  border-radius: 4px;
+  padding: 5px;
+
+}
+
+/*  Footer Logo Sizing */
+.navbar-brand, .header-logo{
+  border-radius: 50%;
+  width: 300px;
+
+}
+
+
+/* Inquiry Button Styling - Home-page */
+.Button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color:#D7b740;
+}
+
+.Button:hover {
+  background-color:#D7b740; 
+  color: white;
 }

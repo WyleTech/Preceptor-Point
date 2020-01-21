@@ -19,7 +19,7 @@ const Home = () => {
 
           <div className= "home-logo">
           <div className= "container col-lg-8 ">
-          <img  src="../Images/PP_Logo_bizcard_blk.ai" class="img-fluid max-width: 100%" alt="Responsive image"></img>
+          <img  src="../Images/PP_Logo_bizcard_blk.svg" class="img-fluid max-width: 100%" alt="Responsive image"></img>
           </div>
           </div>
           </h1>
@@ -36,7 +36,7 @@ const Home = () => {
                 </Card.Title>
                 <Card.Text>
                   <a href="/student">
-                    <Button className="Button bg-warning" size="lg" block variant="">
+                    <Button className="Button" size="lg" block variant="">
                       Student Inquiry
                     </Button>
                   </a>
@@ -51,7 +51,7 @@ const Home = () => {
                 </Card.Title>
                 <Card.Text>
                   <a href="/preceptor">
-                    <Button className="Button bg-warning" size="lg" block variant="">
+                    <Button className="Button" size="lg" block variant="">
                     Preceptor Inquiry
                     </Button>
                   </a>
