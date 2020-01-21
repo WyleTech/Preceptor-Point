@@ -237,3 +237,4 @@
 2020-01-15 11:50:16,015 [Worker-224: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2020-01-15 11:50:16,018 [Worker-224: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-01-15 11:50:16,018 [Worker-224: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Preceptor\Preceptor-Point\eclipseEE-workspace-preceptor-point-website-master\preceptor_point_website\src\test\resources
+2020-01-20 20:09:36,877 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
