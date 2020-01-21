@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 const About = () => (
   <React.Fragment>
     <header className="page-header">
-      <h1 className="mx-auto text-white text-center col-lg-9 my-5">
+      <h1 className="text-white text-center col-lg-9 my-5">
         <i class="fas fa-laptop-medical"></i> Preceptor Point
       </h1>
     </header>
