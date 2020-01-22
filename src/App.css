@@ -106,13 +106,14 @@
 /* Rounding Card-images */
 .cards-image {
   border-radius: 50%;
+  width: 195px;
+  height: 130px;
 }
 
 /* Student and Preceptor inquiry cards -- home page */
 .Cards-Home {
   margin: auto;
   width: 50%;
-  border: 3px dotted #D7b740;
   padding: 10px;
 }
 

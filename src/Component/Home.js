@@ -29,7 +29,7 @@ const Home = () => {
         <div class="col justify-content-md-center ">
          <CardGroup>
             <Card className="bg-transparent text-white ">
-              <Card.Img className="cards-image"  variant="round mx-auto d-block"  alt="Responsive image" src="../Images/pp1.jpg " />
+              <Card.Img className="cards-image"  variant="round mx-auto d-block"  alt="Responsive image" src="../Images/face1.jpg " />
               <Card.Body >
                 <Card.Title className=" text-center">
                   Find a Preceptor{" "}
@@ -44,7 +44,7 @@ const Home = () => {
               </Card.Body>
             </Card>
             <Card className="bg-transparent text-white">
-              <Card.Img className="cards-image"  variant="round mx-auto d-block"  alt="Responsive image"  src="../Images/pp1.jpg" />
+              <Card.Img className="cards-image"  variant="round mx-auto d-block"  alt="Responsive image"  src="../Images/stethoscope.jpg" />
               <Card.Body>
                 <Card.Title className=" text-center">
                   Become a Preceptor {" "}
