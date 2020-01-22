@@ -137,9 +137,12 @@
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   background-color:#D7b740;
+  margin: auto;
+  
 }
 
 .Button:hover {
   background-color:#D7b740; 
   color: white;
+  
 }

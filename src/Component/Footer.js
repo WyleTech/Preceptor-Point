@@ -39,7 +39,7 @@ class Footer extends React.Component {
             <p className="mb-0 pb-0">
               Mesa, Arizona
               <br></br>
-              (480) 580-3457
+              (480) 669-8366
             </p>
             <span>
               <a
