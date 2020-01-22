@@ -3,7 +3,7 @@ import React from "react";
 import desktopImage from '../Images/brickwall.jpg';
 import { useState, useEffect } from 'react';
 import mobileImage from '../Images/brickwall.jpg';
-// import CardGroup from "react-bootstrap/CardGroup";
+import CardGroup from "react-bootstrap/CardGroup";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
 import CardColumns from 'react-bootstrap/CardColumns';
@@ -26,11 +26,11 @@ const Home = () => {
 
               {/* Card List Practice */}
         <div className="Cards-Home">
-        <div class="row justify-content-center">
-          <CardColumns >
+        <div class="col justify-content-md-center ">
+         <CardGroup>
             <Card className="bg-transparent text-white ">
               <Card.Img className="cards-image"  variant="round mx-auto d-block"  alt="Responsive image" src="../Images/pp1.jpg " />
-              <Card.Body>
+              <Card.Body >
                 <Card.Title className=" text-center">
                   Find a Preceptor{" "}
                 </Card.Title>
@@ -58,7 +58,7 @@ const Home = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </CardColumns>
+            </CardGroup>
         </div>
         </div>
 
