@@ -3,29 +3,15 @@ import React from "react";
 
 const Preceptor = () => (
   <React.Fragment>
-    <header className="page-header">
-      <h1 className="text-white text-center col-lg-9 my-5">
-        <i class="fas fa-file-medical"></i> Want to be a Preceptor?
-      </h1>
-    </header>
-    <div className="container">
-        <div className="col-lg-9 text-left text-white-50">
-          <p>
-            As NP student follow their path toward graduation, they need a
-            Preceptor to guide the way. The qualified Preceptor assures that the
-            NP students achieve success in their clinical hours, and in turn
-            become the future of the industry.{" "}
-          </p>
-          <p>
-            Although a Preceptor should always receive gratitude for their
-            services, they deserve compensated as well.{" "}
-          </p>
-          <p>
-            Join our network of qualified Preceptors and you will receive an
-            honorarium for your work as a preceptor as well as the referral of
-            your peers that are also able to work as Preceptors.{" "}
-          </p>
-        </div>
+   <div>
+        <header className="App-header">
+            <p class="h1 text-secondary display-2 font-weight-bold">
+            <i class="fas fa-file-medical"></i> Become a Preceptor!
+            </p>
+            <div className="P-Form">
+            <iframe width='650px' height='555px' src='https://crm.zoho.com/crm/WebFormServeServlet?rid=60d121c51cacc962704ff069b0b9539a4f3a71f0f102b746ec09984f964ff81agidf6e24382884e6cb4c322a0c92257eeacb429e0a27149a5d8e29db619b5b70b33'></iframe>
+            </div>
+        </header>
       </div>
   
   </React.Fragment>
