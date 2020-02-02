@@ -4,7 +4,7 @@ import React from "react";
 const Preceptor = () => (
   <React.Fragment>
     <div>
-      <h6 className="P-Title text-secondary font-weight-bold text-center">
+      <h6 className="P-Title  font-weight-bold text-center">
         <i class="fas fa-file-medical"></i> Become a Preceptor!
         <div class="iframe-container">
           <iframe

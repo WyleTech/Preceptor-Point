@@ -8,7 +8,7 @@ export default class Student extends React.Component {
   render() {
     return (
       <div>
-      <h6 className="S-Title text-secondary font-weight-bold text-center">
+      <h6 className="S-Title font-weight-bold text-center">
         <i class="fas fa-file-medical"></i> Apply for a Preceptor!
         <div class="iframe-container">
           <iframe
