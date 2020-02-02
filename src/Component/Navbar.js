@@ -43,11 +43,6 @@ class Navbar extends React.Component {
                   About Us
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/login" tabIndex="-1">
-                  Admin
-                </Link>
-              </li>
             </ul>
           </div>
         </nav>
