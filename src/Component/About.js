@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from 'react-bootstrap/Card';
+import Table from "react-bootstrap/Table";
 
 const About = () => (
   <React.Fragment>
@@ -47,7 +48,63 @@ const About = () => (
       </CardGroup>
     </div>
 
-    <div className="container">
+
+    {/* Bootstrap Table */}
+        <div className="Table  d-flex justify-content-center">
+          <div className="container row p-5 col-{breakpoint}-auto ">
+            <div className="col-lg-9 text-left text-white-50">
+              <Table striped bordered hover variant="dark">
+                <thead>
+                  <tr>
+                    <th> <i class="fas fa-laptop-medical"></i></th>
+                    <th className="text-center">How it works!</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      Start the process by filling out an application on below,
+                      free of cost or obligation.{" "}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>
+                      Our professional and experienced team will reach out to
+                      confirm your details.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                      We work through our database of experienced preceptors to
+                      find one that not only specializes in your desired field,
+                      butmatches with your needs.{" "}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>
+                      After the Deposit is placed we connect your information
+                      with the qualified Preceptor(s).
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      After a mutual match is made, the remaining payment is
+                      processed and the you are connected with your preceptor to
+                      set the next steps.{" "}
+                    </td>
+                  </tr>
+                </tbody>
+              </Table>
+            </div>
+          </div>
+        </div> 
+
+    {/* <div className="container">
       <div className="row p-5">
         <div className="col-lg-9 text-left text-white-50">
           <p>
@@ -72,7 +129,8 @@ const About = () => (
 
         </div>
       </div>
-    </div>
+    </div> */}
+
   </React.Fragment>
 );
 

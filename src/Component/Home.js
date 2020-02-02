@@ -6,24 +6,16 @@ import mobileImage from '../Images/brickwall.jpg';
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
-import CardColumns from 'react-bootstrap/CardColumns';
+// import CardColumns from 'react-bootstrap/CardColumns';
 
 
 const Home = () => {
   const imageUrl = useWindowWidth() >= 650 ? desktopImage : mobileImage;
-
   return (
     <div className="Home" style={{ backgroundImage: `url(${imageUrl})` }}>
-      <div className="Home-content">
-        <h1 className="Title display-3 col-{breakpoint}-auto container text-white text-center font-weight-bold my-5">
-
-          <div className= "home-logo">
-          <div className= "container col-lg-8 ">
-          <img  src="../Images/PP_Logo_bizcard_blk.svg" class="img-fluid max-width: 100%" alt="Responsive image"></img>
-          </div>
-          </div>
-          </h1>
-
+       <div className= "home-logo container col-lg-10">
+          <img  src="../Images/PP_Logo_bizcard_wht.png" class="img-fluid max-width: 100% mx-auto d-block" alt="Responsive image"></img>
+ 
               {/* Card List Practice */}
         <div className="Cards-Home">
         <div class="col justify-content-md-center ">
@@ -62,7 +54,7 @@ const Home = () => {
         </div>
         </div>
 
-        <h1 className="call-today text-white display-5 responsive-font-sizes">Call Today! (480) 580-3457 </h1>
+        <h1 className="call-today text-white display-5 responsive-font-sizes text-center">Call Today! (480) 580-3457 </h1>
         
 
           {/* <div className="Student-Button"> */}
