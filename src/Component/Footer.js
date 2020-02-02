@@ -34,7 +34,7 @@ class Footer extends React.Component {
               ></img>
             </Link>
           </div>
-          <div className="col-4 order-3 ">
+          <div className="Contact-Us col-4 order-3 ">
             <strong>Contact Us</strong>
             <p className="mb-0 pb-0">
               Mesa, Arizona

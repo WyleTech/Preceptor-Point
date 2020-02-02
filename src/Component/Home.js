@@ -20,12 +20,12 @@ const Home = () => {
             <Card className="bg-transparent text-white ">
               <Card.Img className="cards-image"  variant="round mx-auto d-block"  alt="Responsive image" src="../Images/face1.jpg " />
               <Card.Body >
-                <Card.Title className=" text-center">
+                <Card.Title className="Card-Title text-center font-weight-bold ">
                   Find a Preceptor{" "}
                 </Card.Title>
                 <Card.Text>
                   <a href="/student">
-                    <Button className="Button" size="lg" block variant="">
+                    <Button className="Button " size="lg" block variant="">
                       Student Inquiry
                     </Button>
                   </a>
@@ -35,7 +35,7 @@ const Home = () => {
             <Card className="bg-transparent text-white">
               <Card.Img className="cards-image"  variant="round mx-auto d-block"  alt="Responsive image"  src="../Images/stethoscope.jpg" />
               <Card.Body>
-                <Card.Title className=" text-center">
+                <Card.Title className="Card-Title text-center font-weight-bold">
                   Become a Preceptor {" "}
                 </Card.Title>
                 <Card.Text>
@@ -50,7 +50,7 @@ const Home = () => {
             </CardGroup>
         </div>
         </div>
-        <h1 className="call-today text-white display-5 responsive-font-sizes text-center">Call Today! (480) 580-3457 </h1>
+        <h1 className="Call-Today display-5 responsive-font-sizes text-center">Call Today! (480) 580-3457 </h1>
       </div>
     </div>
   );

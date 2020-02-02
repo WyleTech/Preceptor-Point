@@ -90,7 +90,7 @@
   }
 }
 @media screen and (max-width: 1200px) {
-  .call-today {
+  .Call-Today {
     font-size: 0px;
   }
 }
@@ -158,7 +158,7 @@
 }
  /*----------- END - i-form Responsive Styling -----------*/
 
- .P-Title, .S-Title, .About-Us-Title {
+ .P-Title, .S-Title, .About-Us-Title, .Call-Today {
  
   text-shadow:
   -1px -1px 0 #D7b740,
@@ -211,6 +211,16 @@
              border-color:#D7b740;
           }
 /*---------START BUTTON ANIMATIONS-HOME-PAGE--------- */
+
+/* Hover Gold border for NavBar (Header) */
+.nav-link:hover, .About-Us-Title:hover {
+  border-bottom:1px solid #D7b740;
+  border-right:1px solid #D7b740;
+  border-top:1px solid #D7b740;
+  border-left:1px solid #D7b740;
+  background:rgba(0,0,0,.5);
+  transition:all 1s;
+}
         
       
       
