@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 class Footer extends React.Component {
   render() {
     return (
-      <div className='container'>
-      <footer className=" footer bg-dark text-white-50 text-center p-4">
+      <div className='container' >
+      <footer className=" footer bg-dark text-white-50 text-center p-4" style= {{height: 130}}>
         <div className="row text-center">
           <div className="col-4">
             <strong>Accepted Payments</strong>
@@ -31,8 +31,8 @@ class Footer extends React.Component {
               <img
                src="../Images/PP_Favicon.png"
               alt="PP Logo Responsive image"
-               className="logo"
-               style={{height: 120}}
+               className="img-fluid mt-0 mb-0"
+               style={{height: 80}}
               ></img>
             </Link>
           </div>
