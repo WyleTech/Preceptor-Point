@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 class Footer extends React.Component {
   render() {
     return (
-      <footer className="bg-dark border-top border-white text-white-50 text-center p-4">
+      <div className='container'>
+      <footer className=" footer bg-dark text-white-50 text-center p-4">
         <div className="row text-center">
           <div className="col-4">
             <strong>Accepted Payments</strong>
@@ -28,9 +29,10 @@ class Footer extends React.Component {
           <div className="col-4 order-2">
             <Link className="navbar-brand" to="/">
               <img
-               src="../Images/PP_Logo_bizcard_wht.svg"
+               src="../Images/PP_Favicon.png"
               alt="PP Logo Responsive image"
                className="logo"
+               style={{height: 120}}
               ></img>
             </Link>
           </div>
@@ -68,6 +70,7 @@ class Footer extends React.Component {
           </div>
         </div>
       </footer>
+      </div>
     );
   }
 }

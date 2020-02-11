@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+footer {
+  position: sticky;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: calc(1.525rem + 3.3vw);
+  }
+}

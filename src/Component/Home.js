@@ -14,8 +14,9 @@ const Home = () => {
           <img  src="../Images/PP_Logo_bizcard_wht.svg" style= {{height:400}} class="img-fluid max-width: 100% mx-auto d-block" alt="Responsive image"></img>
  
               {/* Card List ractice */}
+              <div className='container'>
         <div className="Cards-Home">
-        <div class="col justify-content-md-center ">
+        <div className="col justify-content-md-center ">
          <CardGroup>
             <Card className="bg-transparent text-white ">
               <Card.Img className="cards-image"  variant="round mx-auto d-block"  alt="Responsive image" src="../Images/face1.jpg " />
@@ -25,7 +26,7 @@ const Home = () => {
                 </Card.Title>
                 <Card.Text>
                   <a href="/student">
-                    <Button className="Button " size="lg" block variant="">
+                    <Button className="Button " style={{fontSize: 20}} size="lg" block variant="">
                       Student Inquiry
                     </Button>
                   </a>
@@ -40,7 +41,7 @@ const Home = () => {
                 </Card.Title>
                 <Card.Text>
                   <a href="/preceptor">
-                    <Button className="Button" size="lg" block variant="">
+                    <Button className="Button" style={{fontSize: 20}} size="lg" block variant="">
                     Preceptor Inquiry
                     </Button>
                   </a>
@@ -50,9 +51,11 @@ const Home = () => {
             </CardGroup>
         </div>
         </div>
+        </div>
         <h1 className="Call-Today display-5 responsive-font-sizes text-center">Call Today! (480) 580-3457 </h1>
       </div>
     </div>
+    
   );
 };
 
