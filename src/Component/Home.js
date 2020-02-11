@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="Home" style={{ backgroundImage: `url(${imageUrl})` }}>
        <div className= "home-logo container col-lg-10">
-          <img  src="../Images/PP_Favicon.png" style= {{height:200}} class="img-fluid max-width: 100% mx-auto d-block" alt="Responsive image"></img>
+          <img  src="../Images/PP_Logo_bizcard_wht.svg" style= {{height:400}} class="img-fluid max-width: 100% mx-auto d-block" alt="Responsive image"></img>
  
               {/* Card List ractice */}
         <div className="Cards-Home">
