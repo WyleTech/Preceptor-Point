@@ -1,7 +1,7 @@
 import React from "react";
 import desktopImage from '../Images/brickwall.jpg';
 import { useState, useEffect } from 'react';
-import mobileImage from '../Images/brickwall.jpg';
+import mobileImage from '../Images/brickwall-horizontal.jpg';
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
@@ -52,7 +52,7 @@ const Home = () => {
         </div>
         </div>
         </div>
-        <h1 className="Call-Today display-5 responsive-font-sizes text-center">Call Today! (480) 580-3457 </h1>
+        <h1 className="Call-Today display-5 responsive-font-sizes text-center">Call Today! (480) 669-8366 </h1>
       </div>
     </div>
     
