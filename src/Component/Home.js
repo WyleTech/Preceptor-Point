@@ -5,12 +5,14 @@ import mobileImage from '../Images/brickwall-horizontal.jpg';
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   const imageUrl = useWindowWidth() >= 650 ? desktopImage : mobileImage;
   return (
-    <div className="Home" style={{ backgroundImage: `url(${imageUrl})` }}>
-       <div className= "home-logo container col-lg-10">
+    
+    // <div className="Home" id='home' style={{ backgroundImage: `url(${imageUrl})` }}>
+       <div className= "home-logo container col-lg-10 mb-5">
           <img  src="../Images/PP_Logo_bizcard_wht.svg" style= {{height:400}} class="img-fluid max-width: 100% mx-auto d-block" alt="Responsive image"></img>
  
               {/* Card List ractice */}
@@ -25,11 +27,11 @@ const Home = () => {
                   Find a Preceptor{" "}
                 </Card.Title>
                 <Card.Text>
-                  <a href="/student">
+                  <Link to="/student">
                     <Button className="Button" style={{fontSize: 20}} size="lg" block variant="">
                       Student Inquiry
                     </Button>
-                  </a>
+                  </Link>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -40,18 +42,18 @@ const Home = () => {
                   Become a Preceptor {" "}
                 </Card.Title>
                 <Card.Text>
-                  <a href="/preceptor">
+                  <Link to="/preceptor">
                     <Button className="Button" style={{fontSize: 20}} size="lg" block variant="">
                     Preceptor Inquiry
                     </Button>
-                  </a>
+                  </Link>
                 </Card.Text>
               </Card.Body>
             </Card>
             </CardGroup>
-                 <a href="/about">
+                 <Link to="/about">
                <Button className="Button "  style={{fontSize: 20}} size="lg" block variant="" >How it works </Button>
-      </a>
+      </Link>
               </div>
               </div>
         </div>
@@ -59,7 +61,7 @@ const Home = () => {
         <h1 className="Call-Today display-5 responsive-font-sizes text-center">Call Today! (480) 669-8366 </h1>
       </div>
      
-    </div>
+    // </div>
     
   );
 };
