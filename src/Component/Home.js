@@ -26,7 +26,7 @@ const Home = () => {
                 </Card.Title>
                 <Card.Text>
                   <a href="/student">
-                    <Button className="Button " style={{fontSize: 20}} size="lg" block variant="">
+                    <Button className="Button" style={{fontSize: 20}} size="lg" block variant="">
                       Student Inquiry
                     </Button>
                   </a>
@@ -49,11 +49,16 @@ const Home = () => {
               </Card.Body>
             </Card>
             </CardGroup>
+                 <a href="/about">
+               <Button className="Button "  style={{fontSize: 20}} size="lg" block variant="" >How it works </Button>
+      </a>
+              </div>
+              </div>
         </div>
-        </div>
-        </div>
+        
         <h1 className="Call-Today display-5 responsive-font-sizes text-center">Call Today! (480) 669-8366 </h1>
       </div>
+     
     </div>
     
   );

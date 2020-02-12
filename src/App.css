@@ -222,6 +222,10 @@
   transition:all 1s;
 }
         
-      
+.Payment-plan {
+  color: #D7b740;
+  font-style: italic; 
+  font-size: 13px;
+}      
       
   

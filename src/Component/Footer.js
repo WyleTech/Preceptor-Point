@@ -10,20 +10,13 @@ class Footer extends React.Component {
           <div className="col-4">
             <strong>Accepted Payments</strong>
             <br></br>
-            <span>
-              <img
-              // src="Images/cashapp.png"
-              // alt="Cash App"
-              // className="paymentOptions"
-              ></img>
-            </span>
-            <span>
-              <img
-              // src="Images/zelle.png"
-              // alt="Zelle"
-              // className="paymentOptions"
-              ></img>
-            </span>
+            <i class="fab fa-cc-visa fa-lg text-danger"></i> <i class="fab fa-cc-mastercard fa-lg text-danger"></i> <i class="fab fa-cc-discover fa-lg text-danger"></i> <i class="fab fa-cc-amex fa-lg text-danger"></i>
+           <br></br>
+           <a className="Payment-plan  mr-1"> Payment Plans Available</a>
+           <br></br>
+           <a className="Secure-site text-success mr-1"> Secure site</a>
+            <i class="fas fa-shield-alt text-success"></i>
+
           </div>
 
           <div className="col-4 order-2">
