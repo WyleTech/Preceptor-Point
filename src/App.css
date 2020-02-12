@@ -222,10 +222,16 @@
   transition:all 1s;
 }
         
-.Payment-plan {
+.Payment-Plan {
   color: #D7b740;
   font-style: italic; 
   font-size: 13px;
-}      
+}   
+
+@media screen and (max-width: 768px) {
+  .Payment-Plan, .Accepted-Payments, .Secure-Site {
+    font-size: 10px;
+  }
+}
       
   

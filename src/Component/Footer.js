@@ -8,13 +8,13 @@ class Footer extends React.Component {
       <footer className=" footer bg-dark text-white-50 text-center p-4" style= {{height: 130}}>
         <div className="row text-center">
           <div className="col-4">
-            <strong>Accepted Payments</strong>
+            <strong className="Accepted-Payments" >Accepted Payments</strong>
             <br></br>
             <i class="fab fa-cc-visa fa-lg text-danger"></i> <i class="fab fa-cc-mastercard fa-lg text-danger"></i> <i class="fab fa-cc-discover fa-lg text-danger"></i> <i class="fab fa-cc-amex fa-lg text-danger"></i>
            <br></br>
-           <a className="Payment-plan  mr-1"> Payment Plans Available</a>
+           <a className="Payment-Plan  mr-1 "> Payment Plans Available</a>
            <br></br>
-           <a className="Secure-site text-success mr-1"> Secure site</a>
+           <a className="Secure-Site text-success mr-1"> Secure site</a>
             <i class="fas fa-shield-alt text-success"></i>
 
           </div>
