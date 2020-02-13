@@ -219,6 +219,7 @@
   }
 }
 
+/* Button Sizing on Mobile Version */
 @media screen and (max-width: 1200px) {
   .Button {
     padding:4px 9px;
