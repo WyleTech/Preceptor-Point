@@ -1,12 +1,21 @@
+html {
+  /* height: 100%; */
+  overflow: auto;  
+}
+
 body {
   height: 100%;
+  padding: 0; 
   margin: 0;
+   overflow: auto; 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+    display: flex;
+  flex-direction: column;
 }
 
 code {
@@ -15,20 +24,21 @@ code {
 }
 
 footer {
+position: sticky;
   position: absolute;
   left:0;
   bottom:0;
   right:0;
   width: 100%;
-  
-  
+
 }
 
-#footer {
+/* #footer {
+  position: sticky;
   position: absolute;
   bottom: 0;
   width: 100%;
-}
+}  */
 
 #home {
   min-height: 100vh; /* will cover the 100% of viewport */

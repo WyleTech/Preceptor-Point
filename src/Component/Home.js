@@ -1,7 +1,9 @@
 import React from "react";
-import desktopImage from '../Images/brickwall.jpg';
+// import desktopImage from '../Images/brickwall.jpg';
+import desktopImage from '../Images/nurse1.jpeg';
+import mobileImage from '../Images/nurse1.jpeg';
+// import mobileImage from '../Images/brickwall-horizontal.jpg';
 import { useState, useEffect } from 'react';
-import mobileImage from '../Images/brickwall-horizontal.jpg';
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
@@ -11,15 +13,16 @@ const Home = () => {
   const imageUrl = useWindowWidth() >= 650 ? desktopImage : mobileImage;
   return (
     
-    // <div className="Home" id='home' style={{ backgroundImage: `url(${imageUrl})` }}>
-       <div className= "home-logo container col-lg-10 mb-5">
-          <img  src="../Images/PP_Logo_bizcard_wht.svg" style= {{height:400}} class="img-fluid max-width: 100% mx-auto d-block" alt="Responsive image"></img>
- 
+     <div className="Home" id='home' style={{ backgroundImage: `url(${imageUrl})` }}>
+       <div className="Home-Container container col-lg-10 mb-5 ">
+         <div id="home-logo">
+          <img  src="../Images/PP_Logo_bizcard_wht.svg" style= {{height:450}} class=" img-fluid max-width: 100% mx-auto d-block" alt="Responsive image"></img>
+          </div>
               {/* Card List ractice */}
               <div className='container'>
         <div className="Cards-Home">
         <div className="col justify-content-md-center ">
-         <CardGroup>
+         <CardGroup  >
             <Card className="bg-transparent text-white ">
               <Card.Img className="cards-image"  variant="round mx-auto d-block"  alt="Responsive image" src="../Images/face1.jpg " />
               <Card.Body >
@@ -34,7 +37,7 @@ const Home = () => {
                   </Link>
                 </Card.Text>
               </Card.Body>
-            </Card>
+            </Card> 
             <Card className="bg-transparent text-white">
               <Card.Img className="cards-image"  variant="round mx-auto d-block"  alt="Responsive image"  src="../Images/stethoscope.jpg" />
               <Card.Body>
@@ -52,7 +55,7 @@ const Home = () => {
             </Card>
             </CardGroup>
                  <Link to="/about">
-               <Button className="Button "  style={{fontSize: 20}} size="lg" block variant="" >How it works </Button>
+               <Button className="Button "  style={{fontSize: 20}} size="" block variant="" >How it works </Button>
       </Link>
               </div>
               </div>

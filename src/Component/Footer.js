@@ -5,7 +5,7 @@ class Footer extends React.Component {
   render() {
     return (
       <div className='container bg-dark mt-5' id='footer'>
-      <footer className=" footer bg-dark text-white-50 text-center p-4" style= {{height: 65}}>
+      <footer className=" footer bg-dark  text-white-50 text-center p-2 border-top  border-white" style= {{height: 110}}>
         <div className="row text-center">
           <div className="col-4">
             <strong className="Accepted-Payments" >Accepted Payments</strong>
@@ -20,14 +20,14 @@ class Footer extends React.Component {
           </div>
 
           <div className="col-4 order-2">
-            <Link className="navbar-brand" to="/">
+            {/* <Link className="navbar-brand" to="/">
               <img
                src="../Images/PP_Favicon.png"
               alt="PP Logo Responsive image"
                className="img-fluid mt-0 mb-0"
                style={{height: 80 }}
               ></img>
-            </Link>
+            </Link> */}
           </div>
           <div className="Contact-Us col-4 order-3 ">
             <strong>Contact Us</strong>
